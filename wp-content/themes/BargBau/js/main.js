@@ -17,7 +17,7 @@ mobileMenu();
 ---------------------------------------------------- */
 function galleryBeforeAfter() {
 	const gallery = document.querySelectorAll('.gallery');
-
+    console.log('gallery update');
 	gallery.forEach(gallery => {
 		const galleryResize = gallery.querySelector('.gallery-resize');
 		const range = gallery.querySelector('input');
@@ -44,6 +44,10 @@ const playerContainers = document.querySelectorAll(".hoverEffects");
 playerContainers.forEach(container => {
     const player = container.querySelector("lottie-player");
     player.seek(150);
+
+    if (player.dataset.icon == 'icon_2') {
+        player.seek(60);
+    }
 
     container.addEventListener("mouseover", () => {
         const player = container.querySelector("lottie-player");  

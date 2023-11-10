@@ -240,7 +240,8 @@ nav ul li a {
     transition: all 0.3s;
 }
 nav ul li + li {margin-top: 10px;}
-nav ul li a:hover {color: #87dc3f;}
+nav ul li a:hover,
+nav ul li.current-menu-item a {color: #87dc3f;}
 
 .header-content {
     text-align: center;
@@ -360,6 +361,14 @@ nav ul li a:hover {color: #87dc3f;}
 .machen li:nth-child(4) {transition-delay: 0.9s;}
 .machen li:nth-child(5) {transition-delay: 1.2s;}
 .machen li:nth-child(6) {transition-delay: 1.5s;}
+
+.machen li:nth-child(1) {order: 1;}
+.machen li:nth-child(2) {order: 2;}
+.machen li:nth-child(3) {order: 4;}
+.machen li:nth-child(4) {order: 6;}
+.machen li:nth-child(5) {order: 3;}
+.machen li:nth-child(6) {order: 7;}
+
 .machen li .icon {
     width: 68px;
     height: 68px;
