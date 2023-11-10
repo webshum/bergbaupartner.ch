@@ -1065,6 +1065,49 @@ nav ul li.current-menu-item a {color: #87dc3f;}
 }   
 .kontact-content ul li a:hover {background: #000;}
 
+/* GALLERY PORTFOLIO
+-------------------------------------- */
+.gallery-potfolio {margin-top: 100px;}
+.gallery-potfolio h3.title,
+.gallery-potfolio p.subtitle {
+    text-align: left;
+}
+.gallery-potfolio p.subtitle {
+    font-weight: 300;
+    margin-top: 0;
+    font-size: 17px;
+    color: #ccc;
+}
+
+.gallery-potfolio .wrap {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+.gallery-potfolio .image {
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.gallery-potfolio .image:hover {
+    box-shadow: 0 8px 16px rgba(52, 255, 200, .1);
+}
+.gallery-potfolio .image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media (max-width: 991px) {
+    .gallery-potfolio .wrap {grid-template-columns: repeat(3, 1fr);}
+}
+
+@media (max-width: 750px) {
+    .gallery-potfolio .wrap {grid-template-columns: repeat(2, 1fr);}
+}
+
 /* FOOTER
 -------------------------------------- */
 .footer {
