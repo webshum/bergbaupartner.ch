@@ -15,8 +15,9 @@ add_theme_support( 'post-thumbnails' );
 add_action( 'wp_enqueue_scripts', 'berbau_add_scripts' );
 function berbau_add_scripts() {
 	wp_enqueue_style( 'style-main', get_template_directory_uri() .'/css/style.css' );
+	wp_enqueue_style( 'style-lightbox', 'https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css' );
 	wp_enqueue_script( 'script-lottie', 'https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js', null, null, true );
-	wp_enqueue_script( 'script-lightbox', get_template_directory_uri() .'/js/fslightbox.js', array(), '1.0', true );
+	wp_enqueue_script( 'script-lightbox', 'https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js', array(), '1.0', true );
 	wp_enqueue_script( 'script-main', get_template_directory_uri() .'/js/main.js', array(), '1.0', true );
 }
 

@@ -11,7 +11,7 @@
 				</div>
 
 				<div class="footer-item col-6 footer-copy an an-top">
-					<?php dynamic_sidebar('footer-copy'); ?>
+					<p>Copyright © <?= date('Y') ?> <?php dynamic_sidebar('footer-copy'); ?></p>
 				</div>
 			</div>			
 		</div>

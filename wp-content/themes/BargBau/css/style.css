@@ -362,13 +362,6 @@ nav ul li.current-menu-item a {color: #87dc3f;}
 .machen li:nth-child(5) {transition-delay: 1.2s;}
 .machen li:nth-child(6) {transition-delay: 1.5s;}
 
-.machen li:nth-child(1) {order: 1;}
-.machen li:nth-child(2) {order: 2;}
-.machen li:nth-child(3) {order: 4;}
-.machen li:nth-child(4) {order: 6;}
-.machen li:nth-child(5) {order: 3;}
-.machen li:nth-child(6) {order: 7;}
-
 .machen li .icon {
     width: 68px;
     height: 68px;
@@ -397,8 +390,8 @@ nav ul li.current-menu-item a {color: #87dc3f;}
 }
 .machen li:nth-child(1) .icon span lottie-player {width: 35px;}
 .machen li:nth-child(3) .icon span lottie-player {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
 }
 .machen li:nth-child(4) .icon span lottie-player {
     width: 45px;
@@ -663,7 +656,7 @@ nav ul li.current-menu-item a {color: #87dc3f;}
     position: relative;
     overflow: hidden;
     display: block;
-	border-bottom: 3px solid #212121;
+	border-bottom: 20px solid #212121;
 }
 .image-row .section .image {
     position: absolute;
@@ -765,12 +758,11 @@ nav ul li.current-menu-item a {color: #87dc3f;}
 .image-col {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
 }
 .image-col .section {
     display: block;
 }
-.image-col .section .image {border-right: 3px solid #151515;}
-.image-col .section:last-child .image {border-right: 0;}
 .image-col .image {
     position: relative;
     min-height: 235px;
@@ -900,6 +892,11 @@ nav ul li.current-menu-item a {color: #87dc3f;}
 }
 .gallery-3 .row + .row {margin-top: 50px;}
 .gallery-3 .row.reverse .col-6:first-child {order: 1;}
+
+.gallery-3 .row.reverse:nth-child(even) .col-6:last-child {
+    order: 1;
+}
+.gallery-3 .row .slide-item {padding: 0;}
 
 .mt100 {margin-top: 100px;}
 

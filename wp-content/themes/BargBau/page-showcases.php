@@ -33,7 +33,7 @@ get_header();
 						<div class="wrap">
 							<?php foreach ($item['images'] as $image) : ?>
 								<?php if (!empty($image['image'])) : ?>
-									<a href="<?= $image['image']['url']; ?>" data-fslightbox="gallery" class="image">
+									<a href="<?= $image['image']['url']; ?>" data-fancybox="gallery" class="image" data-caption="<?= $item['title'] ?> / <?= $item['subtitle'] ?>">
 										<img src="<?= $image['image']['url']; ?>" alt="<?= $image['image']['alt']; ?>">
 									</a>
 								<?php endif; ?>

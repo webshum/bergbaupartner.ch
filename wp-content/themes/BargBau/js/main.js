@@ -1,3 +1,7 @@
+Fancybox.bind("[data-fancybox]", {
+    wheel: "slide"
+});
+
 /* MOBILE MENU
 ---------------------------------------------------- */
 function mobileMenu() {
