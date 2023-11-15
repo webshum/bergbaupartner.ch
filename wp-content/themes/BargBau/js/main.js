@@ -49,7 +49,7 @@ playerContainers.forEach(container => {
     const player = container.querySelector("lottie-player");
     player.seek(150);
 
-    if (player.dataset.icon == 'icon_3') {
+    if (player.dataset.icon == 'icon_2') {
         player.seek(60);
     }
 
