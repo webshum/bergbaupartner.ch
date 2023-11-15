@@ -710,7 +710,7 @@ nav ul li.current-menu-item a {color: #87dc3f;}
 .image-row .hover-image:hover .image img {transform: scale(1.1);}
 
 .image-row .section:nth-child(1) lottie-player {width: 47px;}
-.image-row .section:nth-child(2) lottie-player {width: 30px;}
+.image-row .section:nth-child(2) lottie-player {width: 35px;}
 .image-row .section:nth-child(3) lottie-player {width: 17px;}
 
 .link {
