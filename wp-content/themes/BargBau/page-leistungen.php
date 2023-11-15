@@ -18,7 +18,7 @@ get_header();
 
 		<?php if (!isArrayEmpty($images_row)) : ?>
 			<div class="image-row">
-				<?php $icon = [1,2,'bottle']; $count = 0; ?>
+				<?php $icon = [1,3,'bottle']; $count = 0; ?>
 				<?php foreach ($images_row as $section): ?>
 					<?php if (!empty($section['link'])) : ?>
 						<a href="<?= $section['link']['url']; ?>" <?= (!empty($section['link']['target'])) ? 'target="_blank"' : ''; ?> class="section hover-image">
@@ -46,7 +46,7 @@ get_header();
 
 		<?php if (!isArrayEmpty($images_col)) : ?>
 			<div class="image-col">
-				<?php $icon = ['glass',2,5]; $count = 0; ?>
+				<?php $icon = ['glass',3,5]; $count = 0; ?>
 				<?php foreach ($images_col as $section): ?>
 					<div class="section hover-image">
 						<?php if (!empty($section['link'])) : ?>
