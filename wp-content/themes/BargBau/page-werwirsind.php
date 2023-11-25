@@ -40,4 +40,26 @@ get_header();
 <?php get_template_part('template-parts/content/content', 'icons'); ?>
 <!-- // MACHEN -->
 
+<!-- PHOTO -->
+<?php $photo = get_field('photo'); ?>
+
+<?php if (!empty($photo)) : ?>
+<div class="photo-partner">
+	<?php if (!empty($photo['image'])) : ?>
+		<img src="<?= $photo['image']['url'] ?>" alt="<?= $photo['image']['alt'] ?>">
+	<?php endif; ?>
+
+	<div class="center">
+		<?php if (!empty($photo['title'])) : ?>
+			<h3><?= $photo['title']; ?></h3>
+		<?php endif; ?>
+
+		<?php if (!empty($photo['text'])) : ?>
+			<p><?= $photo['text']; ?></p>
+		<?php endif; ?>
+	</div>
+</div>
+<?php endif; ?>
+<!-- // PHOTO -->
+
 <?php get_footer(); ?>

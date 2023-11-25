@@ -928,6 +928,21 @@ nav ul li.current-menu-item a {color: #87dc3f;}
     margin-top: 85px;
 }
 
+.photo-partner img {
+    display: block;
+    width: 100%;
+}
+.photo-partner .center {padding: 50px 15px;}
+.photo-partner h3 {
+    font-size: 50px;
+    line-height: 1.2;
+}
+.photo-partner p {margin-top: 30px;}
+
+@media (max-width: 700px) {
+    .photo-partner h3 {font-size: 38px;}
+}
+
 /* GALLERY 4
 -------------------------------------- */
 .gallery-4 {
@@ -968,8 +983,6 @@ nav ul li.current-menu-item a {color: #87dc3f;}
     font-weight: 300;
     color: #fff;
 }
-
-.page-werwirsind .machen {margin-bottom: 200px;}
 
 /* PAGE KONTAKT
 -------------------------------------- */
@@ -1604,7 +1617,6 @@ nav ul li.current-menu-item a {color: #87dc3f;}
         min-height: 380px;
     }
     .page-werwirsind .header-content h1 {font-size: 30px;}
-    .page-werwirsind .machen {margin-bottom: 0;}
 }
 
 
