@@ -216,13 +216,14 @@ nav {
     right: -400px;
     bottom: 0;
     width: 400px;
-    background: rgb(46,46,46,.8);
+    background: rgb(46 46 46 / 96%);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     z-index: 10;
     transition: all 0.3s;
+    border-left: 1px solid rgba(150,150,150,.3);
 }
 nav ul {
     opacity: 0;
@@ -239,6 +240,7 @@ nav ul li a {
     font-weight: 300;
     letter-spacing: 2px;
     transition: all 0.3s;
+    text-align: center;
 }
 nav ul li + li {margin-top: 10px;}
 nav ul li a:hover,

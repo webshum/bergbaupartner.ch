@@ -123,16 +123,6 @@ function isArrayEmpty($array) {
     return true;
 }
 
-// function custom_post_permalink( $permalink, $post, $leavename ) {
-//     if ( $post->post_type == 'portfolio' ) {
-//         $permalink = home_url( '/leistungen/' );
-//     }
-
-//     return $permalink;
-// }
-// add_filter( 'post_link', 'custom_post_permalink', 10, 3 );
-// add_filter( 'post_type_link', 'custom_post_permalink', 10, 3 );
-
 function custom_portfolio_redirect() {
     if ($_SERVER['REQUEST_URI'] === '/portfolio/') {
         wp_redirect(home_url('/leistungen'), 301);
