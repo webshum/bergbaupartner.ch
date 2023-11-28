@@ -248,9 +248,8 @@ nav .logo {
     height: 62px;
     min-height: auto;
     background-size: 75px;
-    position: absolute;
-    top: 41px;
-    left: 60px;
+    margin-bottom: 20px;
+    position: static;
 }
 
 .header-content {
@@ -1359,11 +1358,6 @@ nav .logo {
     .btn-nav {
         top: 38px;
         right: 25px;
-    }
-
-    nav .logo {
-        top: 80px;
-        left: 35px;
     }
 
     .header-content h1 {
