@@ -23,6 +23,7 @@ get_header();
 					<?php if (!empty($section['link'])) : ?>
 						<a href="<?= $section['link']['url']; ?>" <?= (!empty($section['link']['target'])) ? 'target="_blank"' : ''; ?> class="section hover-image">
 							<div class="image">
+								<img src="<?= $section['image_black']['url']; ?>" alt="<?= $section['image_black']['alt']; ?>">
 								<img src="<?= $section['image']['url']; ?>" alt="<?= $section['image']['alt']; ?>">
 							</div>	
 
@@ -51,6 +52,7 @@ get_header();
 					<div class="section hover-image">
 						<?php if (!empty($section['link'])) : ?>
 							<a class="image" href="<?= $section['link']['url']; ?>" <?= (!empty($section['link']['target'])) ? 'target="_blank"' : ''; ?> >
+								<img src="<?= $section['image_black']['url']; ?>" alt="<?= $section['image_black']['alt']; ?>">
 								<img src="<?= $section['image']['url']; ?>" alt="<?= $section['image']['alt']; ?>">
 
 								<div class="link">

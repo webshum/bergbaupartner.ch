@@ -13,6 +13,10 @@ function mobileMenu() {
         header.classList.toggle('nav-active');
         document.body.classList.toggle('hidden');
     }
+
+    if (location.href.indexOf('portfolio') != -1) {
+        document.querySelector('nav li:first-child').classList.add('current-menu-item');
+    }
 }
 
 mobileMenu();

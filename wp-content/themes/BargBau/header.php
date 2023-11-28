@@ -76,6 +76,7 @@ if (is_front_page()) {
 		<?php endif; ?>		
 
 		<nav>
+			<a href="/" class="logo an an-top"></a>
 			<?php
 				wp_nav_menu([
 					'theme_location'  => 'header_menu',

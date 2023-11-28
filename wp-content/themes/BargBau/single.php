@@ -1,5 +1,15 @@
 <?php get_header(); ?>
 
+<div class="breadcrumbs">
+	<div class="center">
+		<?php
+			if ( function_exists('yoast_breadcrumb') ) {
+				yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+			}
+		?>
+	</div>
+</div>
+
 <!-- PORTFOLIO -->
 <section class="portfolio">
 	<div class="center">
@@ -28,9 +38,9 @@
 		
 		<div class="gallery-3 mt100">
 			<?php $gallery_1 = get_field('gallery')['gallery_1']; ?>
-			<div class="row">
+			<div class="row reverse">
 				<div class="col-6 an an-left">
-					<div class="gallery">
+					<div class="gallery mt0">
 						<div class="gallery-view">
 							<img src="<?= $gallery_1['image']['url'] ?>" alt="<?= $gallery_1['image']['alt'] ?>">
 
@@ -53,7 +63,7 @@
 			<?php $gallery_1 = get_field('gallery')['gallery_1_2']; ?>
 			<div class="row">
 				<div class="col-6 an an-left">
-					<div class="gallery">
+					<div class="gallery mt0">
 						<div class="gallery-view">
 							<img src="<?= $gallery_1['image']['url'] ?>" alt="<?= $gallery_1['image']['alt'] ?>">
 
