@@ -361,9 +361,6 @@ nav .logo {
     font-weight: 300;
     font-size: 20px;
 }
-.breadcrumbs::first-letter,
-.breadcrumbs a::first-letter,
-.breadcrumbs span::first-letter {text-transform: uppercase;}
 .breadcrumbs a {color: #86dc3e;}
 .breadcrumbs a:hover {text-decoration: underline;}
 
