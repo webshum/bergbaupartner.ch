@@ -360,7 +360,6 @@ nav .logo {
     margin-top: 50px;
     font-weight: 300;
     font-size: 20px;
-    text-transform: lowercase;
 }
 .breadcrumbs::first-letter,
 .breadcrumbs a::first-letter,
