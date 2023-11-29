@@ -819,6 +819,7 @@ nav .logo {
     position: absolute;
     left: 25px;
     bottom: 15px;
+    z-index: 2;
 }
 .image-col h3 {
     font-weight: 600;
@@ -1048,6 +1049,8 @@ nav .logo {
 .page-kontakt .contacts a {
     color: #fff;
     transition: all 0.3s;
+    display: flex;
+    align-items: center;
 }
 .page-kontakt .contacts a:hover {color: #87dc3f;}
 .page-kontakt .contacts p + p {margin-top: 20px;}
@@ -1362,6 +1365,7 @@ nav .logo {
         right: 25px;
     }
 
+    .header-content {padding: 0 10px;}
     .header-content h1 {
         font-size: 23px;
         line-height: 33px;
@@ -1371,6 +1375,7 @@ nav .logo {
         font-size: 15px;
         line-height: 19px;
     }
+    .header-content .subtitle br {display: none;}
 
     .header-mini {min-height: 180px;}
     .page-home .header-content h1,
@@ -1418,7 +1423,7 @@ nav .logo {
     .portfolio-foot .text {font-size: 17px;}
 
     .image-row .section {
-        min-height: 250px;
+        min-height: 300px;
         margin-bottom: 50px;
     }
     .image-row .section .cont {padding: 20px 15px 30px 15px;}
