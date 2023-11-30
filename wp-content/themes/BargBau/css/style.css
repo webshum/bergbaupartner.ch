@@ -1419,8 +1419,8 @@ nav .logo {
     .portfolio-foot .text {font-size: 17px;}
 
     .image-row .section {
-        min-height: 300px;
         margin-bottom: 50px;
+        min-height: 400px;
     }
     .image-row .section .cont {padding: 20px 15px 30px 15px;}
     .image-row h3 {
@@ -1443,10 +1443,6 @@ nav .logo {
 	.image-col .hover-image:first-child .image:hover .link i {left: 0;}
 	.image-col .subtitle {padding-right: 0;}
 	
-	.image-row .text {
-		max-height: 112px;
-    	overflow: hidden;
-	}
 	.image-row .section:first-child .link {margin-left: -4px;}
 	.image-row .section:nth-child(2) .link {margin-left: 0px;}
 
