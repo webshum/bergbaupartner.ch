@@ -14,6 +14,7 @@
 				<?php if (!empty($portfolio['image']['url'])) : ?>
 					<img src="<?= $portfolio['image']['url']; ?>" alt="<?= $portfolio['image']['alt']; ?>">
 				<?php endif ?>
+				
 
 				<?php if (!empty($portfolio['image_before']['url'])) : ?>
 					<div class="gallery-resize">
